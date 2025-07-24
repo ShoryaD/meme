@@ -96,7 +96,7 @@ export function CustomizePanel({
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <div>
             <Card className="p-4 space-y-4">
