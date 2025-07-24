@@ -2,7 +2,6 @@
 
 import { FileObject } from "imagekit/dist/libs/interfaces";
 import { IKImage } from "imagekitio-next";
-import { urlEndpoint } from "../providers";
 
 import {
   Card,
@@ -20,15 +19,17 @@ export function ResultsList({ files }: { files: FileObject[] }) {
       {files.map((file) => (
         <Card key={file.fileId}>
           <CardHeader>
-            <CardTitle>{file.customMetadata?.displayName ?? file.name}</CardTitle>
+            <CardTitle className="flex justify-between">
+              {file.customMetadata?.displayName ?? file.name}
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <IKImage
               path={file.filePath}
-              urlEndpoint={urlEndpoint}
+              key={file.fileId}
               alt={file.name}
               width={300}
-              height={500}
+              height={400}
             />
           </CardContent>
           <CardFooter>
