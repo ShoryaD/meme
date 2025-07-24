@@ -56,7 +56,7 @@ export function CustomizePanel({
   return (
     <>
       <div className="flex justify-between items-center">
-        <h1 className="text-4xl font-bold">Customize</h1>
+        <h1 className="text-4xl font-semibold">Customize</h1>
 
         <div className="flex gap-4 justify-end">
           {isAuthenticated && (

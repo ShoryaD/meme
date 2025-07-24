@@ -17,7 +17,7 @@ export function TextOverlay({
     index: number,
     text: string,
     x: number,
-    y: number, 
+    y: number,
     bgColor?: string
   ) => void;
 }) {
@@ -37,7 +37,7 @@ export function TextOverlay({
     onUpdate(
       index,
       textOverlay || " ",
-      xPositionDecimal,  
+      xPositionDecimal,
       yPositionDecimal,
       bgColor
     );
